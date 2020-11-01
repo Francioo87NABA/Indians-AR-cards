@@ -12,6 +12,8 @@ public enum BattleState { START, TOTEMS, YMAGIA, ZMAGIA }
 
 public class BattleSystem : MonoBehaviour
 {
+    public static BattleSystem Singleton;
+    
     public BattleState State;
 
     public Image instructionsPanel;
@@ -22,8 +24,15 @@ public class BattleSystem : MonoBehaviour
 
     public bool isThereYTotem;
     public bool isThereZTotem;
+    public bool isThereYMagia;
+    public bool isThereZMagia;
+    public bool go;
     
-    
+
+    private void OnEnable()
+    {
+        Singleton = this;
+    }
 
     void Start()
     {
@@ -38,6 +47,17 @@ public class BattleSystem : MonoBehaviour
         {
             State = BattleState.YMAGIA;
             Magie();
+        }
+
+        if (State != BattleState.YMAGIA) return;
+        if (isThereYMagia && isThereZMagia)
+        {
+            go = true;
+            
+            magieText.gameObject.SetActive(false);
+
+            isThereYMagia = false;
+            isThereZMagia = false;
         }
     }
 
@@ -79,9 +99,19 @@ public class BattleSystem : MonoBehaviour
     {
         totemText.gameObject.SetActive(false);
         
-        
-        magieText.text = "gioca una magia" + " risponde";
+        magieText.gameObject.SetActive(true);
+    }
+    
+    public void YMagia()
+    {
+        isThereYMagia = true; //fallo chiamare dai marker delle magie
+        //instanzia la magia 
+        // la magia sa quanto danno fa e lo comunica all unit quando lo colpisce 
+    }
 
+    public void ZMagia()
+    {
+        isThereZMagia = true;
     }
     
 }

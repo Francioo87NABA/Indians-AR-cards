@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Unit : MonoBehaviour
+public class MagiaUnit : MonoBehaviour
 {
     public bool y;
     
     public string name;
 
-    public int maxHealth;
-    public int currentHealth;
-    int damage;
+    public int attack;
 
     public Transform instantiationTransformY;
     public Transform instantiationTransformZ;
+    public Transform destinationTransformToZ;
+    public Transform destinationTransformToY;
+
+    public int speed;
     
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         if (y)
         {
@@ -28,11 +31,19 @@ public class Unit : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    // Update is called once per frame
+    void Update()
     {
-        if (other.CompareTag("Magia"))
+        if (BattleSystem.Singleton.go)
         {
-           // damage = other.GetComponent()
+            if (y)
+            {
+                //destinationTransformToY
+            }
+            else
+            {
+                
+            }
         }
     }
 }
