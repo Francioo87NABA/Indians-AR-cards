@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
+    public int y;
+    
     public string name;
 
     public int maxHealth;
