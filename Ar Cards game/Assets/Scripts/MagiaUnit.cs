@@ -21,6 +21,27 @@ public class MagiaUnit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (BattleSystem.Singleton.go)
+        {
+            if (y)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, destinationTransformToZ.position, Time.deltaTime * speed);
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, destinationTransformToY.position, Time.deltaTime * speed);
+            }
+        }
+    }
+
+    public void SetUp()
+    {
         if (y)
         {
             transform.position = instantiationTransformY.position;
@@ -31,19 +52,11 @@ public class MagiaUnit : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (BattleSystem.Singleton.go)
+        if (other.CompareTag("Magia"))
         {
-            if (y)
-            {
-                //destinationTransformToY
-            }
-            else
-            {
-                
-            }
+            //qua avvengono le sottrazioni rispetto le varie superefficaciezzietteizzie
         }
     }
 }

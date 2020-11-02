@@ -9,14 +9,32 @@ public class Unit : MonoBehaviour
     
     public string name;
 
-    public int maxHealth;
+    public int health;
     public int currentHealth;
-    int damage;
 
     public Transform instantiationTransformY;
     public Transform instantiationTransformZ;
+
+    private MagiaUnit magiaValues;
     
     private void Start()
+    {
+      
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Magia"))
+        {
+            magiaValues = other.GetComponent<MagiaUnit>();
+
+            currentHealth = currentHealth - magiaValues.attack;
+            
+            Destroy(other);
+        }
+    }
+
+    public void SetUp()
     {
         if (y)
         {
@@ -25,14 +43,6 @@ public class Unit : MonoBehaviour
         else
         {
             transform.position = instantiationTransformZ.position;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Magia"))
-        {
-           // damage = other.GetComponent()
         }
     }
 }

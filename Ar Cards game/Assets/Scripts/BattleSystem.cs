@@ -42,22 +42,26 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
-        if (State != BattleState.TOTEMS) return;
-        if (isThereYTotem && isThereZTotem)
+        if (State == BattleState.TOTEMS)
         {
-            State = BattleState.YMAGIA;
-            Magie();
+            if (isThereYTotem && isThereZTotem)
+            {
+                State = BattleState.YMAGIA;
+                Magie();
+            }
         }
 
-        if (State != BattleState.YMAGIA) return;
-        if (isThereYMagia && isThereZMagia)
+        if (State == BattleState.YMAGIA)
         {
-            go = true;
+            if (isThereYMagia && isThereZMagia)
+            {
+                go = true;
             
-            magieText.gameObject.SetActive(false);
+                magieText.gameObject.SetActive(false);
 
-            isThereYMagia = false;
-            isThereZMagia = false;
+                isThereYMagia = false;
+                isThereZMagia = false;
+            }
         }
     }
 
