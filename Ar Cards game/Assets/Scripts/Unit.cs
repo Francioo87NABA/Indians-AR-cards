@@ -8,8 +8,7 @@ public class Unit : MonoBehaviour
     public bool y;
     
     public string name;
-
-    public int health;
+    
     public int currentHealth;
 
     public Transform instantiationTransformY;
