@@ -8,7 +8,7 @@ using UnityEngine.SocialPlatforms;
 using Random = System.Random;
 
 
-public enum BattleState { START, TOTEMS, YMAGIA, ZMAGIA }
+public enum BattleState { START, TOTEMS, MAGIE, YLOSEROUND, ZLOSEROUND, END }
 
 public class BattleSystem : MonoBehaviour
 {
@@ -16,11 +16,18 @@ public class BattleSystem : MonoBehaviour
     
     public BattleState State;
 
+    public int yPoints;
+    public int zPoints;
+    private int i;
+    
     public Image instructionsPanel;
     public Text startText;
     public Text totemText;
     public Text magieText;
+    public Text yLoseRound;
+    public Text zLoseRound;
     public Button fatto;
+    public Button fatto2;
 
     public bool isThereYTotem;
     public bool isThereZTotem;
@@ -42,25 +49,51 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
+        if (yPoints >= 2)
+        {
+            // y ha vinto
+        }
+
+        if (zPoints >= 2)
+        {
+            // z ha vinto
+        }
+        
         if (State == BattleState.TOTEMS)
         {
             if (isThereYTotem && isThereZTotem)
             {
-                State = BattleState.YMAGIA;
+                State = BattleState.MAGIE;
                 Magie();
             }
         }
 
-        if (State == BattleState.YMAGIA)
+        if (State == BattleState.MAGIE)
         {
             if (isThereYMagia && isThereZMagia)
             {
                 go = true;
-            
-                magieText.gameObject.SetActive(false);
 
                 isThereYMagia = false;
                 isThereZMagia = false;
+                
+                go = false;
+            }
+
+            if (isThereYTotem == false && i == 0)
+            {
+                zPoints++;
+                i++;
+                YLoseRound();
+                State = BattleState.ZLOSEROUND;
+            }
+
+            if (isThereZTotem == false && i == 0)
+            {
+                yPoints++;
+                i++;
+                ZLoseRound();
+                State = BattleState.YLOSEROUND;
             }
         }
     }
@@ -89,7 +122,7 @@ public class BattleSystem : MonoBehaviour
 
     public void YTotem()
     {
-        isThereYTotem = true; //fallo chiamare dai marker del totem
+        isThereYTotem = true; 
     }
 
     public void ZTotem()
@@ -99,23 +132,50 @@ public class BattleSystem : MonoBehaviour
     
     #endregion
 
+    #region Magie
+
     void Magie()
     {
         totemText.gameObject.SetActive(false);
-        
+        instructionsPanel.gameObject.SetActive(true);
         magieText.gameObject.SetActive(true);
     }
     
     public void YMagia()
     {
-        isThereYMagia = true; //fallo chiamare dai marker delle magie
-        //instanzia la magia 
-        // la magia sa quanto danno fa e lo comunica all unit quando lo colpisce 
+        isThereYMagia = true;
     }
 
     public void ZMagia()
     {
         isThereZMagia = true;
+    }
+    
+    #endregion
+
+    private void YLoseRound()
+    {
+        magieText.gameObject.SetActive(false);
+        yLoseRound.gameObject.SetActive(true);
+        fatto2.gameObject.SetActive(true);
+        i = 0;
+    }
+    
+    private void ZLoseRound()
+    {
+        magieText.gameObject.SetActive(false);
+        zLoseRound.gameObject.SetActive(true);
+        fatto2.gameObject.SetActive(true);
+        i = 0;
+    }
+
+    public void NextRound()
+    {
+        yLoseRound.gameObject.SetActive(false);
+        zLoseRound.gameObject.SetActive(false);
+        instructionsPanel.gameObject.SetActive(false);
+        fatto2.gameObject.SetActive(false);
+        State = BattleState.TOTEMS;
     }
     
 }

@@ -6,7 +6,11 @@ using UnityEngine;
 public class MagiaUnit : MonoBehaviour
 {
     public bool y;
-    
+    public bool fuoco;
+    public bool acqua;
+    public bool vento;
+
+
     public string name;
 
     public int attack;

@@ -8,7 +8,8 @@ public class Unit : MonoBehaviour
     public bool y;
     
     public string name;
-    
+
+    private int maxHealth = 100;
     public int currentHealth;
 
     public Transform instantiationTransformY;
@@ -19,6 +20,23 @@ public class Unit : MonoBehaviour
     private void Start()
     {
       
+    }
+
+    private void Update()
+    {
+        if (currentHealth >= 0)
+        {
+            if (y)
+            {
+                BattleSystem.Singleton.isThereYTotem = false;
+            }
+            else
+            {
+                BattleSystem.Singleton.isThereZTotem = false;
+            }
+            
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
