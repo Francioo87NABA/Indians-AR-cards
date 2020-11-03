@@ -16,7 +16,7 @@ public class MagiaUnit : MonoBehaviour
     public Transform destinationTransformToZ;
     public Transform destinationTransformToY;
 
-    public int speed;
+    private int speed = 8;
     
     // Start is called before the first frame update
     void Start()
