@@ -11,6 +11,7 @@ public class Unit : MonoBehaviour
 
     private int maxHealth = 100;
     public int currentHealth;
+    private int i;
 
     public Transform instantiationTransformY;
     public Transform instantiationTransformZ;
@@ -44,10 +45,41 @@ public class Unit : MonoBehaviour
         if (other.CompareTag("Magia"))
         {
             magiaValues = other.GetComponent<MagiaUnit>();
-
-            currentHealth = currentHealth - magiaValues.attack;
             
-            Destroy(other.gameObject);
+            if (y && magiaValues.y == false || y == false && magiaValues.y)
+            {
+                currentHealth = currentHealth - magiaValues.attack;
+            
+                Destroy(other.gameObject);
+            }
+
+            if (y && magiaValues.y || y == false && magiaValues.y == false)
+            {
+                if (magiaValues.speciale)
+                {
+                    if (magiaValues.terra && i == 0)
+                    {
+                        currentHealth = currentHealth + 10;
+                        i++;
+                    }
+                    else if (magiaValues.fuoco && i == 0)
+                    {
+                        currentHealth = currentHealth - 5;
+                        i++;
+                    }
+                    else if (magiaValues.acqua && i == 0)
+                    {
+                        currentHealth = currentHealth + 5;
+                        i++;
+                    }
+                }
+
+                if (magiaValues.speciale && i == 0)
+                {
+                    currentHealth = currentHealth + 25;
+                    i++;
+                }
+            }
         }
     }
 
