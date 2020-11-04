@@ -72,28 +72,7 @@ public class BattleSystem : MonoBehaviour
         {
             if (isThereYMagia && isThereZMagia)
             {
-                go = true;
-
-                isThereYMagia = false;
-                isThereZMagia = false;
-                
-                go = false;
-            }
-
-            if (isThereYTotem == false && i == 0)
-            {
-                zPoints++;
-                i++;
-                YLoseRound();
-                State = BattleState.ZLOSEROUND;
-            }
-
-            if (isThereZTotem == false && i == 0)
-            {
-                yPoints++;
-                i++;
-                ZLoseRound();
-                State = BattleState.YLOSEROUND;
+                StartCoroutine(LancioMagie());
             }
         }
     }
@@ -149,6 +128,34 @@ public class BattleSystem : MonoBehaviour
     public void ZMagia()
     {
         isThereZMagia = true;
+    }
+
+    IEnumerator LancioMagie()
+    {
+        go = true;
+        
+        yield return new WaitForSeconds(1f);
+
+        isThereYMagia = false;
+        isThereZMagia = false;
+                
+        go = false;
+        
+        if (isThereYTotem == false && i == 0)
+        {
+            zPoints++;
+            i++;
+            YLoseRound();
+            State = BattleState.ZLOSEROUND;
+        }
+
+        if (isThereZTotem == false && i == 0)
+        {
+            yPoints++;
+            i++;
+            ZLoseRound();
+            State = BattleState.YLOSEROUND;
+        }
     }
     
     #endregion

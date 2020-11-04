@@ -24,7 +24,7 @@ public class Unit : MonoBehaviour
 
     private void Update()
     {
-        if (currentHealth >= 0)
+        if (currentHealth <= 0)
         {
             if (y)
             {
@@ -47,7 +47,7 @@ public class Unit : MonoBehaviour
 
             currentHealth = currentHealth - magiaValues.attack;
             
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
 
@@ -62,4 +62,6 @@ public class Unit : MonoBehaviour
             transform.position = instantiationTransformZ.position;
         }
     }
+    
+    
 }
