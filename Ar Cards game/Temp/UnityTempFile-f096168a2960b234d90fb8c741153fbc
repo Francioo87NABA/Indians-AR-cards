@@ -1,11 +1,13 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp.dll
+/out:Temp/VuforiaScripts.dll
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -67,19 +69,14 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.dll"
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-/reference:Library/ScriptAssemblies/VuforiaScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/VuforiaEditorScripts.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
-/reference:Library/ScriptAssemblies/EditorMigrationScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll"
 /reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.unity.render-pipelines.core@7.5.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -291,6 +288,8 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\Scripts\BattleSystem.cs
-Assets\Scripts\MagiaUnit.cs
-Assets\Scripts\Unit.cs
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.ptc.vuforia.engine@9.5.4\Vuforia\Scripts\BoundingBoxRenderer.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.ptc.vuforia.engine@9.5.4\Vuforia\Scripts\DefaultInitializationErrorHandler.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.ptc.vuforia.engine@9.5.4\Vuforia\Scripts\DefaultTrackableEventHandler.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.ptc.vuforia.engine@9.5.4\Vuforia\Scripts\Internal\ARFoundationIntegration\ARFoundationInitializer.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.ptc.vuforia.engine@9.5.4\Vuforia\Scripts\Internal\RuntimeOpenSourceInitializer.cs"

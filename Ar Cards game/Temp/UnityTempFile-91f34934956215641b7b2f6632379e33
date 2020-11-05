@@ -1,11 +1,13 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp.dll
+/out:Temp/Unity.Timeline.dll
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -67,19 +69,14 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.dll"
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-/reference:Library/ScriptAssemblies/VuforiaScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/VuforiaEditorScripts.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
-/reference:Library/ScriptAssemblies/EditorMigrationScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll"
 /reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.unity.render-pipelines.core@7.5.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -291,6 +288,73 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\Scripts\BattleSystem.cs
-Assets\Scripts\MagiaUnit.cs
-Assets\Scripts\Unit.cs
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationMixerPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationPlayableAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Activation\ActivationTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationOutputWeightProcessor.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationPlayableAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationPreviewUpdateCallback.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\AnimationTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Animation\ICurvesOwner.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\AnimationPlayableAssetUpgrade.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\ClipUpgrade.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\TimelineUpgrade.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\AssetUpgrade\TrackUpgrade.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Attributes\TrackColorAttribute.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioClipProperties.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioMixerProperties.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioPlayableAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Audio\AudioTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\ClipCaps.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Control\ControlPlayableAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Control\ControlTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\DiscreteTime.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\InfiniteRuntimeClip.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\IntervalTree.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeClip.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeClipBase.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\RuntimeElement.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Evaluation\ScheduleRuntimeClip.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\IMarker.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\INotificationOptionProvider.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Marker.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\MarkerList.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\MarkerTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\SignalTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\CustomSignalEventDrawer.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalEmitter.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Events\Signals\SignalReceiver.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Extensions\TrackExtensions.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\GroupTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\ILayerable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ActivationControlPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\BasicScriptPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\DirectorControlPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ITimeControl.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\NotificationFlags.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\ParticleControlPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\PrefabControlPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\TimeControlPlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Playables\TimeNotificationBehaviour.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Properties\AssemblyInfo.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Scripting\PlayableTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Timeline.deprecated.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAsset_CreateRemove.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineAttributes.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelineClip.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TimelinePlayable.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\TrackAsset.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\AnimationPreviewUtilities.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\AnimatorBindingCache.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\Extrapolation.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\HashUtility.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\IPropertyCollector.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\IPropertyPreview.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\NotificationUtilities.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimeUtility.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimelineCreateUtilities.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\TimelineUndo.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.timeline@1.2.17\Runtime\Utilities\WeightUtility.cs"

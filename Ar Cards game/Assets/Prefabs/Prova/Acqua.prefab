@@ -107,10 +107,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: 1
+  fuoco: 0
+  acqua: 0
+  aria: 0
+  terra: 0
+  nullify: 0
+  efficace: 0
+  speciale: 0
+  cura: 0
   name: Acqua
   attack: 10
   instantiationTransformY: {fileID: 0}
   instantiationTransformZ: {fileID: 0}
   destinationTransformToZ: {fileID: 0}
   destinationTransformToY: {fileID: 0}
-  speed: 10

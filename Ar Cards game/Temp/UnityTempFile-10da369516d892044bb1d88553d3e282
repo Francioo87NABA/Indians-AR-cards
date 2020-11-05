@@ -1,11 +1,14 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp.dll
+/out:Temp/Unity.VisualEffectGraph.Runtime.dll
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -67,19 +70,14 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.dll"
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-/reference:Library/ScriptAssemblies/VuforiaScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/VuforiaEditorScripts.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
-/reference:Library/ScriptAssemblies/EditorMigrationScripts.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll"
 /reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.ptc.vuforia.engine@9.5.4/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll"
+/reference:"C:/Users/User/Desktop/Indians-AR-cards/Ar Cards game/Library/PackageCache/com.unity.render-pipelines.core@7.5.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -289,8 +287,50 @@
 /define:ENABLE_TILEMAP
 /define:ENABLE_TIMELINE
 /define:ENABLE_LEGACY_INPUT_MANAGER
+/define:VFX_HAS_TIMELINE
+/define:VFX_HAS_TERRAINMODULE
+/define:VFX_HAS_UI
+/define:VFX_HAS_PHYSICS
+/define:VFX_HAS_AUDIO
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\Scripts\BattleSystem.cs
-Assets\Scripts\MagiaUnit.cs
-Assets\Scripts\Unit.cs
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\CustomSpawners\IncrementStripIndexOnStart.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\CustomSpawners\LoopAndDelay.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\CustomSpawners\SetSpawnTime.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\CustomSpawners\SpawnOverDistance.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\PackageInfo.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\EventBinding\Implementation\VFXMouseEventBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\EventBinding\Implementation\VFXRigidBodyCollisionEventBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\EventBinding\Implementation\VFXTriggerEventBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\EventBinding\Implementation\VFXVisibilityEventBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\EventBinding\VFXEventBinderBase.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\Playables\VisualEffectActivation\VisualEffectActivationBehaviour.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\Playables\VisualEffectActivation\VisualEffectActivationClip.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\Playables\VisualEffectActivation\VisualEffectActivationMixerBehaviour.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\Playables\VisualEffectActivation\VisualEffectActivationTrack.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\ExposedProperty.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXAudioSpectrumBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXEnabledBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXHierarchyAttributeMapBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXInputAxisBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXInputButtonBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXInputKeyBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXInputMouseBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXInputTouchBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXLightBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXMultiplePositionBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXPlaneBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXPositionBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXPreviousPositionBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXRaycastBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXSphereBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXTerrainBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXTransformBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXUIDropdownBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXUISliderBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXUIToggleBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\Implementation\VFXVelocityBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\VFXBinderAttribute.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\VFXBinderBase.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\VFXPropertyBinder.cs"
+"C:\Users\User\Desktop\Indians-AR-cards\Ar Cards game\Library\PackageCache\com.unity.visualeffectgraph@7.5.1\Runtime\Utilities\PropertyBinding\VFXPropertyBindingAttribute.cs"
