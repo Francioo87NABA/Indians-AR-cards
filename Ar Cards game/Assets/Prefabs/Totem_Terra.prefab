@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770343865575034841}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 169.71489, y: 169.71489, z: 169.71489}
+  m_LocalRotation: {x: -0, y: -0.7126242, z: -0, w: 0.701546}
+  m_LocalPosition: {x: 0, y: -0.083, z: 0}
+  m_LocalScale: {x: 114.71453, y: 114.71453, z: 114.71453}
   m_Children: []
   m_Father: {fileID: 2968339155588561943}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.898, z: 0}
 --- !u!33 &8143245370272578042
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2968339155588561943}
   m_Layer: 0
-  m_Name: Totem Terra
+  m_Name: Totem_Terra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,8 +377,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8245040905295935053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 103.43304, z: 121.85756}
+  m_LocalPosition: {x: 0, y: 0.009, z: 0}
+  m_LocalScale: {x: 88.35, y: 91.38309, z: 107.66115}
   m_Children: []
   m_Father: {fileID: 2968339155588561943}
   m_RootOrder: 1

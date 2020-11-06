@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2939898890501244710}
   m_Layer: 0
-  m_Name: Totem Acqua
+  m_Name: Totem_Acqua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,17 +100,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 20308e08ac914b44d8250af8fcd3f50a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 91.764
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20308e08ac914b44d8250af8fcd3f50a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 103.43304
+      value: 94.91429
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20308e08ac914b44d8250af8fcd3f50a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 121.85756
+      value: 111.821365
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 20308e08ac914b44d8250af8fcd3f50a,
         type: 3}
@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.195
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
@@ -160,7 +160,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.55577207
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.83133477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -67.528
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
@@ -195,17 +195,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 169.71489
+      value: 154.44055
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 169.71489
+      value: 154.44055
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 169.71489
+      value: 154.44055
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 40a81f66f5f77344bbe105041e94a25c,
         type: 3}
