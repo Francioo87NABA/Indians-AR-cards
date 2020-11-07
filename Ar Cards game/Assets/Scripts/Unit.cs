@@ -6,10 +6,8 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     public bool y;
-    
-    public string name;
 
-    private int maxHealth = 100;
+    //private int maxHealth = 100;
     public int currentHealth;
     private int i;
 
@@ -17,6 +15,8 @@ public class Unit : MonoBehaviour
     public Transform instantiationTransformZ;
 
     private MagiaUnit magiaValues;
+
+    public bool debug;
     
     private void Start()
     {
@@ -37,6 +37,11 @@ public class Unit : MonoBehaviour
             }
             
             Destroy(gameObject);
+        }
+
+        if (debug)
+        {
+            SetUp();
         }
     }
 

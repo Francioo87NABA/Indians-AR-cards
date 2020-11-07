@@ -15,19 +15,20 @@ public class MagiaUnit : MonoBehaviour
     public bool speciale;
     public bool cura;
 
-
-    public string name;
-
     public int attack;
+    private int i;
+    
+    private float speed = 0.3f;
 
     public Transform instantiationTransformY;
     public Transform instantiationTransformZ;
     public Transform destinationTransformToZ;
     public Transform destinationTransformToY;
 
-    private int speed = 8;
-
     private MagiaUnit otherMagia;
+
+    public bool debug;
+    public bool goDebug;
     
     // Start is called before the first frame update
     void Start()
@@ -38,30 +39,46 @@ public class MagiaUnit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BattleSystem.Singleton.go)
+        if (BattleSystem.Singleton.go || goDebug)
         {
             if (y)
             {
+                print("doesndoencde");
+                
                 transform.position = Vector3.MoveTowards(transform.position, destinationTransformToZ.position, Time.deltaTime * speed);
             }
             else
             {
+                print("dde");
+                
                 transform.position = Vector3.MoveTowards(transform.position, destinationTransformToY.position, Time.deltaTime * speed);
             }
+        }
+        
+        if (debug)
+        {
+            SetUp();
         }
     }
 
     public void SetUp()
     {
-        if (y)
+        if (i == 0)
         {
-            transform.position = instantiationTransformY.position;
-        }
-        else
-        {
-            transform.position = instantiationTransformZ.position;
+            i++;
+            
+            if (y)
+            {
+                transform.position = instantiationTransformY.position;
+            }
+            else
+            {
+                transform.position = instantiationTransformZ.position;
+            }
         }
     }
+
+    #region MyRegion
 
     private void OnTriggerEnter(Collider other)
     {
@@ -161,4 +178,6 @@ public class MagiaUnit : MonoBehaviour
             }
         }
     }
+    
+    #endregion
 }

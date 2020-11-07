@@ -139,7 +139,7 @@ public class BattleSystem : MonoBehaviour
         isThereYMagia = false;
         isThereZMagia = false;
                 
-        go = false;
+        //go = false;
         
         if (isThereYTotem == false && i == 0)
         {
