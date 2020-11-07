@@ -132,6 +132,8 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator LancioMagie()
     {
+        yield return new WaitForSeconds(2.5f);
+        
         go = true;
         
         yield return new WaitForSeconds(1f);
@@ -139,7 +141,7 @@ public class BattleSystem : MonoBehaviour
         isThereYMagia = false;
         isThereZMagia = false;
                 
-        //go = false;
+        go = false;
         
         if (isThereYTotem == false && i == 0)
         {

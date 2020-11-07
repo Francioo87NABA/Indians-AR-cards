@@ -43,14 +43,10 @@ public class MagiaUnit : MonoBehaviour
         {
             if (y)
             {
-                print("doesndoencde");
-                
                 transform.position = Vector3.MoveTowards(transform.position, destinationTransformToZ.position, Time.deltaTime * speed);
             }
             else
             {
-                print("dde");
-                
                 transform.position = Vector3.MoveTowards(transform.position, destinationTransformToY.position, Time.deltaTime * speed);
             }
         }

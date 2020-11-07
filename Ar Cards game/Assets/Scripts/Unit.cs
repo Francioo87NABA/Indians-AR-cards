@@ -7,7 +7,7 @@ public class Unit : MonoBehaviour
 {
     public bool y;
 
-    //private int maxHealth = 100;
+    private int maxHealth = 100;
     public int currentHealth;
     private int i;
 
@@ -55,7 +55,7 @@ public class Unit : MonoBehaviour
             {
                 currentHealth = currentHealth - magiaValues.attack;
             
-                Destroy(other.gameObject);
+                Destroy(other.gameObject, 0.15f);
             }
 
             if (y && magiaValues.y || y == false && magiaValues.y == false)
