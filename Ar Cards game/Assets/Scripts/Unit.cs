@@ -7,7 +7,11 @@ public class Unit : MonoBehaviour
 {
     public bool y;
 
+    [SerializeField]
     private int maxHealth = 100;
+
+    public event Action<float> OnHealthPctChanged = delegate { };
+
     public int currentHealth;
     private int i;
 
@@ -21,6 +25,19 @@ public class Unit : MonoBehaviour
     private void Start()
     {
       
+    }
+
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void ModifyHealth (int amount)
+    {
+        currentHealth += amount;
+
+        float currentHealthPct = (float)currentHealth / (float)maxHealth;
+        OnHealthPctChanged(currentHealthPct);
     }
 
     private void Update()
@@ -43,6 +60,9 @@ public class Unit : MonoBehaviour
         {
             SetUp();
         }
+
+        
+    
     }
 
     private void OnTriggerEnter(Collider other)
