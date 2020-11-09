@@ -13,7 +13,6 @@ public class BarraVita : MonoBehaviour
     private void Awake()
     {
         GetComponentInParent<Unit>().OnHealthPctChanged += HandleHealthChanged;
-
     }
 
     private void HandleHealthChanged (float pct)

@@ -7,11 +7,10 @@ public class Unit : MonoBehaviour
 {
     public bool y;
 
-    [SerializeField]
-    private int maxHealth = 100;
-
     public event Action<float> OnHealthPctChanged = delegate { };
 
+    [SerializeField]
+    private int maxHealth = 100;
     public int currentHealth;
     private int i;
 
@@ -34,9 +33,10 @@ public class Unit : MonoBehaviour
 
     public void ModifyHealth (int amount)
     {
-        currentHealth += amount;
+        currentHealth -= amount;
 
         float currentHealthPct = (float)currentHealth / (float)maxHealth;
+        
         OnHealthPctChanged(currentHealthPct);
     }
 
@@ -60,9 +60,6 @@ public class Unit : MonoBehaviour
         {
             SetUp();
         }
-
-        
-    
     }
 
     private void OnTriggerEnter(Collider other)
@@ -73,7 +70,9 @@ public class Unit : MonoBehaviour
             
             if (y && magiaValues.y == false || y == false && magiaValues.y)
             {
-                currentHealth = currentHealth - magiaValues.attack;
+               // currentHealth = currentHealth - magiaValues.attack;
+                
+                ModifyHealth(magiaValues.attack);
             
                 Destroy(other.gameObject, 0.15f);
             }
@@ -99,11 +98,11 @@ public class Unit : MonoBehaviour
                     }
                 }
 
-                if (magiaValues.speciale && i == 0)
+                /*if (magiaValues.speciale && i == 0)
                 {
                     currentHealth = currentHealth + 25;
                     i++;
-                }
+                }*/
             }
         }
     }
